@@ -86,16 +86,19 @@
         }
         body[lang="bn"] .font-bengali, body[lang="bn"] [lang="bn"] { font-family: 'Hind Siliguri', sans-serif; }
         .hero-bg {
-            background-color: #192a56;
-            background-image: linear-gradient(135deg, rgba(25, 42, 86, 0.95), rgba(39, 60, 117, 0.95)), url('https://aziz.com.bd/hero-background.jpg');
+            background-image: linear-gradient(135deg, rgba(25, 42, 86, 0.7), rgba(39, 60, 117, 0.7)), url('https://aziz.com.bd/hero-background.jpg');
             background-size: cover;
             background-position: center;
+            background-color: #192a56; /* Fallback color */
         }
         .trust-bg {
-            background-color: #192a56;
-            background-image: linear-gradient(135deg, rgba(25, 42, 86, 0.95), rgba(39, 60, 117, 0.95)), url('https://aziz.com.bd/trust-background.jpg');
+            background-image: linear-gradient(135deg, rgba(25, 42, 86, 0.8), rgba(39, 60, 117, 0.8)), url('https://aziz.com.bd/trust-background.jpg');
             background-size: cover;
             background-position: center;
+            background-color: #192a56; /* Fallback color */
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
         }
         .service-card {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -226,8 +229,8 @@
         <!-- Hero Section -->
         <section id="home" class="hero-bg text-white relative min-h-screen flex items-center">
             <div class="container mx-auto px-6 text-center relative z-10">
-                <h2 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-5 tracking-tight font-bengali" data-lang-en="Your Trusted Partner in Tax Law" data-lang-bn="কর আইনে আপনার বিশ্বস্ত অংশীদার">কর আইনে আপনার বিশ্বস্ত অংশীদার</h2>
-                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-white/90 font-bengali" data-lang-en="Expert guidance in TIN, VAT, and Income Tax matters for businesses and individuals across Bangladesh." data-lang-bn="বাংলাদেশ জুড়ে ব্যবসা প্রতিষ্ঠান ও ব্যক্তিবর্গের জন্য টিআইএন, ভ্যাট এবং আয়কর বিষয়ে বিশেষজ্ঞ আইনি সহায়তা।">বাংলাদেশ জুড়ে ব্যবসা প্রতিষ্ঠান ও ব্যক্তিবর্গের জন্য টিআইএন, ভ্যাট এবং আয়কর বিষয়ে বিশেষজ্ঞ আইনি সহায়তা।</p>
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-5 tracking-tight font-bengali text-shadow" data-lang-en="Your Trusted Partner in Tax Law" data-lang-bn="কর আইনে আপনার বিশ্বস্ত অংশীদার">কর আইনে আপনার বিশ্বস্ত অংশীদার</h2>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-white/90 font-bengali text-shadow" data-lang-en="Expert guidance in TIN, VAT, and Income Tax matters for businesses and individuals across Bangladesh." data-lang-bn="বাংলাদেশ জুড়ে ব্যবসা প্রতিষ্ঠান ও ব্যক্তিবর্গের জন্য টিআইএন, ভ্যাট এবং আয়কর বিষয়ে বিশেষজ্ঞ আইনি সহায়তা।">বাংলাদেশ জুড়ে ব্যবসা প্রতিষ্ঠান ও ব্যক্তিবর্গের জন্য টিআইএন, ভ্যাট এবং আয়কর বিষয়ে বিশেষজ্ঞ আইনি সহায়তা।</p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                     <a href="#services" class="bg-brand-gold text-brand-navy font-bold py-3 px-10 rounded-md hover:bg-opacity-90 transition-all duration-300 shadow-lg w-full sm:w-auto font-bengali" data-lang-en="Explore Services" data-lang-bn="সেবাসমূহ দেখুন">সেবাসমূহ দেখুন</a>
                     <a href="#about" class="border-2 border-white text-white font-bold py-3 px-10 rounded-md hover:bg-white hover:text-brand-navy transition-all duration-300 w-full sm:w-auto font-bengali" data-lang-en="Learn More" data-lang-bn="বিস্তারিত জানুন">বিস্তারিত জানুন</a>
@@ -300,8 +303,8 @@
         <!-- Trust & Expertise Section -->
         <section class="trust-bg relative py-28 text-white fade-in-section">
              <div class="container mx-auto px-6 text-center relative z-10">
-                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4 font-bengali" data-lang-en="Tax Law Expertise You Can Rely On" data-lang-bn="নির্ভরযোগ্য কর আইন বিশেষজ্ঞ">Tax Law Expertise You Can Rely On</h2>
-                <p class="max-w-3xl mx-auto text-white/90 text-lg font-bengali" data-lang-en="With years of proven expertise, Aziz & Associates has a reputation for achieving meaningful results. Every case is approached with meticulous preparation and unwavering dedication. Our success lies in the long-term partnerships we cultivate with our clients across Bangladesh." data-lang-bn="বহু বছরের প্রমাণিত দক্ষতার সাথে, আজিজ অ্যান্ড অ্যাসোসিয়েটস অর্থবহ ফলাফল অর্জনের জন্য খ্যাতি অর্জন করেছে। প্রতিটি মামলা সতর্ক প্রস্তুতি এবং অবিচল নিষ্ঠার সাথে পরিচালনা করা হয়। আমাদের সাফল্য বাংলাদেশের ক্লাইন্টদের সাথে দীর্ঘমেয়াদী অংশীদারিত্বের মধ্যে নিহিত।">With years of proven expertise, Aziz & Associates has a reputation for achieving meaningful results. Every case is approached with meticulous preparation and unwavering dedication. Our success lies in the long-term partnerships we cultivate with our clients across Bangladesh.</p>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4 font-bengali text-shadow" data-lang-en="Tax Law Expertise You Can Rely On" data-lang-bn="নির্ভরযোগ্য কর আইন বিশেষজ্ঞ">Tax Law Expertise You Can Rely On</h2>
+                <p class="max-w-3xl mx-auto text-white/90 text-lg font-bengali text-shadow" data-lang-en="With years of proven expertise, Aziz & Associates has a reputation for achieving meaningful results. Every case is approached with meticulous preparation and unwavering dedication. Our success lies in the long-term partnerships we cultivate with our clients across Bangladesh." data-lang-bn="বহু বছরের প্রমাণিত দক্ষতার সাথে, আজিজ অ্যান্ড অ্যাসোসিয়েটস অর্থবহ ফলাফল অর্জনের জন্য খ্যাতি অর্জন করেছে। প্রতিটি মামলা সতর্ক প্রস্তুতি এবং অবিচল নিষ্ঠার সাথে পরিচালনা করা হয়। আমাদের সাফল্য বাংলাদেশের ক্লাইন্টদের সাথে দীর্ঘমেয়াদী অংশীদারিত্বের মধ্যে নিহিত।">With years of proven expertise, Aziz & Associates has a reputation for achieving meaningful results. Every case is approached with meticulous preparation and unwavering dedication. Our success lies in the long-term partnerships we cultivate with our clients across Bangladesh.</p>
             </div>
         </section>
 
