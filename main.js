@@ -50,3 +50,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set default language to Bengali
     setLanguage('bn');
 });
+
