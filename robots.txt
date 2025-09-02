@@ -1,4 +1,6 @@
+Allow all search engine crawlers to access the site.
 User-agent: *
 Allow: /
 
+Provide the location of the sitemap to help crawlers index the site more efficiently.
 Sitemap: https://aziz.com.bd/sitemap.xml
