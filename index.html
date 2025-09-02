@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- ============== SOCIAL MEDIA META TAGS ============== -->
+    <!-- ============== SOCIAL MEDIA META TAGS (OPEN GRAPH & TWITTER) ============== -->
     <meta property="og:title" content="আজিজ অ্যান্ড অ্যাসোসিয়েটস | বাংলাদেশের বিশেষজ্ঞ কর ও ভ্যাট আইন ফার্ম" data-lang-en="Aziz & Associates | Expert Tax & VAT Law Firm in Bangladesh" data-lang-bn="আজিজ অ্যান্ড অ্যাসোসিয়েটস | বাংলাদেশের বিশেষজ্ঞ কর ও ভ্যাট আইন ফার্ম">
     <meta property="og:description" content="বাংলাদেশ জুড়ে সকল কর ও ভ্যাট সংক্রান্ত বিষয়ে বিশেষজ্ঞ আইনি সহায়তা। বিশ্বস্ত পরামর্শের জন্য আজিজ অ্যান্ড অ্যাসোসিয়েটসের সাথে যোগাযোগ করুন।" data-lang-en="Elite legal counsel for all tax and VAT matters across Bangladesh. Contact Aziz & Associates for trusted advisory." data-lang-bn="বাংলাদেশ জুড়ে সকল কর ও ভ্যাট সংক্রান্ত বিষয়ে বিশেষজ্ঞ আইনি সহায়তা। বিশ্বস্ত পরামর্শের জন্য আজিজ অ্যান্ড অ্যাসোসিয়েটসের সাথে যোগাযোগ করুন।">
     <meta property="og:image" content="https://aziz.com.bd/logo.png">
@@ -74,41 +74,17 @@
 
     <!-- ============== CUSTOM CSS FOR ENHANCEMENTS ============== -->
     <style>
-        body {
-            -webkit-user-select: none; -ms-user-select: none; user-select: none;
-        }
-        .selectable {
-            -webkit-user-select: text; -ms-user-select: text; user-select: text;
-        }
+        body { -webkit-user-select: none; -ms-user-select: none; user-select: none; }
+        .selectable { -webkit-user-select: text; -ms-user-select: text; user-select: text; }
         body[lang="bn"] .font-bengali, body[lang="bn"] [data-lang-bn] { font-family: 'Hind Siliguri', sans-serif; }
-        .hero-bg {
-            background-image: linear-gradient(135deg, rgba(25, 42, 86, 0.7), rgba(39, 60, 117, 0.7)), url('https://aziz.com.bd/hero-background.jpg');
-            background-size: cover; background-position: center; background-color: #192a56;
-        }
-        .trust-bg {
-            background-image: linear-gradient(135deg, rgba(25, 42, 86, 0.8), rgba(39, 60, 117, 0.8)), url('https://aziz.com.bd/trust-background.jpg');
-            background-size: cover; background-position: center; background-color: #192a56;
-        }
+        .hero-bg { background-image: linear-gradient(135deg, rgba(25, 42, 86, 0.7), rgba(39, 60, 117, 0.7)), url('https://aziz.com.bd/hero-background.jpg'); background-size: cover; background-position: center; background-color: #192a56; }
+        .trust-bg { background-image: linear-gradient(135deg, rgba(25, 42, 86, 0.8), rgba(39, 60, 117, 0.8)), url('https://aziz.com.bd/trust-background.jpg'); background-size: cover; background-position: center; background-color: #192a56; }
         .text-shadow { text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
-        .service-card {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
-            border: 1px solid transparent;
-        }
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-            border-color: #d4af37;
-        }
-        .fade-in-section {
-            opacity: 0; transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .fade-in-section.is-visible {
-            opacity: 1; transform: translateY(0);
-        }
-        .aspect-portrait {
-            aspect-ratio: 4 / 5;
-        }
+        .service-card { transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out; border: 1px solid transparent; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); border-color: #d4af37; }
+        .fade-in-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-section.is-visible { opacity: 1; transform: translateY(0); }
+        .aspect-portrait { aspect-ratio: 4 / 5; }
     </style>
     
     <!-- ============== JSON-LD STRUCTURED DATA FOR ADVANCED SEO & RICH RESULTS ============== -->
@@ -130,7 +106,6 @@
         "contactType": "customer service",
         "areaServed": "BD",
         "availableLanguage": ["en", "bn"],
-        "contactOption": "TollFree",
         "description": "Contact us on WhatsApp for immediate assistance."
       },
       "founder": { "@type": "Person", "name": "Abdul Aziz", "jobTitle": "Income Tax Practitioner (ITP)", "knowsAbout": ["Tax Law", "VAT Law", "Income Tax"] },
@@ -274,6 +249,8 @@
                         <h3 class="font-serif font-bold text-2xl mb-3 text-brand-navy font-bengali" data-lang-en="Tax Advisory" data-lang-bn="কর পরামর্শ">কর পরামর্শ</h3>
                         <p class="text-brand-charcoal font-bengali" data-lang-en="Proactive tax planning and advisory services to optimize financial strategies and minimize liabilities." data-lang-bn="আর্থিক পরিকল্পনাকে উন্নত করতে এবং দায়ভার কমাতে আমরা অগ্রিম কর পরিকল্পনা এবং পরামর্শমূলক সেবা প্রদান করি।">আর্থিক পরিকল্পনাকে উন্নত করতে এবং দায়ভার কমাতে আমরা অগ্রিম কর পরিকল্পনা এবং পরামর্শমূলক সেবা প্রদান করি।</p>
                     </article>
+                    <!-- This empty article is a spacer for grid alignment on some views -->
+                     <article class="hidden lg:block service-card bg-transparent p-8 rounded-lg"></article>
                 </div>
             </div>
         </section>
@@ -384,7 +361,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Disable right-click context menu
             document.addEventListener('contextmenu', event => event.preventDefault());
 
             const languageSwitcher = document.getElementById('language-switcher');
@@ -392,7 +368,6 @@
             const mobileMenu = document.getElementById('mobile-menu');
             const translatableElements = document.querySelectorAll('[data-lang-en]');
             
-            // Intersection Observer for fade-in animations
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -403,24 +378,20 @@
 
             document.querySelectorAll('.fade-in-section').forEach(section => observer.observe(section));
 
-            // Function to set the language of the page
             function setLanguage(lang) {
                 document.documentElement.lang = lang;
                 document.body.lang = lang;
 
                 translatableElements.forEach(el => {
                     const text = el.getAttribute(`data-lang-${lang}`);
-                    if (text !== null) { // Check if the attribute exists
-                        // Handle meta tags and title tag
+                    if (text !== null) {
                         if (el.tagName === 'META' || el.tagName === 'TITLE') {
                             if (el.hasAttribute('content')) {
                                 el.setAttribute('content', text);
                             } else {
-                                // This handles the <title> tag
                                 el.textContent = text;
                             }
                         } else {
-                            // Handle all other elements
                             el.innerHTML = text;
                         }
                     }
@@ -429,23 +400,19 @@
                 languageSwitcher.innerText = (lang === 'en') ? 'বাংলা' : 'English';
             }
             
-            // Event listener for the language switcher button
             languageSwitcher.addEventListener('click', () => {
                 const newLang = document.documentElement.lang === 'en' ? 'bn' : 'en';
                 setLanguage(newLang);
             });
 
-            // Event listener for the mobile menu button
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
 
-            // Close mobile menu when a link is clicked
             mobileMenu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
             });
 
-            // Initialize the page with the default language (Bengali)
             setLanguage('bn');
         });
     </script>
