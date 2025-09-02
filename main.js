@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Disable right-click context menu
+    // Disable right-click context menu to protect content
     document.addEventListener('contextmenu', event => event.preventDefault());
 
+    // Get references to all necessary DOM elements
     const languageSwitcher = document.getElementById('language-switcher');
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     const translatableElements = document.querySelectorAll('[data-lang-en]');
+    
+    // Set up Intersection Observer for scroll animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -18,6 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
+    /**
+     * Sets the website language by updating all translatable elements.
+     * @param {string} lang - The language to set ('en' or 'bn').
+     */
     function setLanguage(lang) {
         document.documentElement.lang = lang;
         document.body.lang = lang;
@@ -32,22 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
         languageSwitcher.innerText = (lang === 'en') ? 'বাংলা' : 'English';
     }
     
+    // Event listener for the language switcher button
     languageSwitcher.addEventListener('click', () => {
         const newLang = document.documentElement.lang === 'en' ? 'bn' : 'en';
         setLanguage(newLang);
     });
 
+    // Event listener for the mobile menu button
     mobileMenuButton.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
     });
 
+    // Event listeners to close the mobile menu when a link is clicked
     mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.add('hidden');
         });
     });
 
-    // Set default language to Bengali
+    // Set the default language to Bengali on initial load
     setLanguage('bn');
 });
-
