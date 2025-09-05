@@ -85,108 +85,106 @@
         .aspect-portrait { aspect-ratio: 4 / 5; }
     </style>
     
-    <!-- ============== JSON-LD STRUCTURED DATA (WebSite + LegalService + FAQPage) ============== -->
+    <!-- ============== JSON-LD STRUCTURED DATA (UNIFIED GRAPH) ============== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://aziz.com.bd/#website",
-      "name": "Aziz & Associates",
-      "url": "https://aziz.com.bd/",
-      "alternateName": ["Aziz and Associates", "Aziz & Associate", "Aziz and Associate", "আজিজ অ্যান্ড অ্যাসোসিয়েটস"]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LegalService",
-      "@id": "https://aziz.com.bd/#legalservice",
-      "name": "Aziz & Associates",
-      "alternateName": ["Aziz and Associates", "Aziz & Associate", "Aziz and Associate", "আজিজ অ্যান্ড অ্যাসোসিয়েটস", "Aziz Income Tax Lawyer", "Aziz Tax Service", "Aziz Law Service", "আজিজ ট্যাক্স", "আজিজ ভ্যাট", "Aziz Vat Service", "Aziz TIN Service", "Abdul Aziz ITP"],
-      "description": "Aziz & Associates is a premier tax and VAT law firm in Bangladesh, offering expert legal services nationwide. Specializing in income tax returns, TIN/VAT registration, and tax appeals.",
-      "url": "https://aziz.com.bd/",
-      "logo": { "@type": "ImageObject", "url": "https://aziz.com.bd/logo.png", "width": 512, "height": 512 },
-      "image": "https://aziz.com.bd/logo.png",
-      "telephone": "+8801711479659",
-      "email": "contact@aziz.com.bd",
-       "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+8801711479659",
-        "contactType": "customer service",
-        "areaServed": "BD",
-        "availableLanguage": ["en", "bn"],
-        "description": "Contact us on WhatsApp for immediate assistance."
-      },
-      "founder": { "@type": "Person", "name": "Abdul Aziz", "jobTitle": "Income Tax Practitioner (ITP)", "knowsAbout": ["Tax Law", "VAT Law", "Income Tax"] },
-      "address": { "@type": "PostalAddress", "streetAddress": "In front of Alhaj Abdul Mannan Degree College, BKSP, Ashulia", "addressLocality": "Savar", "addressRegion": "Dhaka", "postalCode": "1349", "addressCountry": "BD" },
-      "openingHours": "Sa,Su,Mo,Tu,We,Th,Fr 10:00-21:00",
-      "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "10:00",
-        "closes": "21:00"
-      }],
-      "areaServed": [
-        { "@type": "AdministrativeArea", "name": "Dhaka Division" }, { "@type": "AdministrativeArea", "name": "Chittagong Division" }, { "@type": "AdministrativeArea", "name": "Sylhet Division" },
-        { "@type": "AdministrativeArea", "name": "Rajshahi Division" }, { "@type": "AdministrativeArea", "name": "Khulna Division" }, { "@type": "AdministrativeArea", "name": "Barisal Division" },
-        { "@type": "AdministrativeArea", "name": "Rangpur Division" }, { "@type": "AdministrativeArea", "name": "Mymensingh Division" }, { "@type": "Country", "name": "Bangladesh" }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog", "name": "Tax & VAT Legal Services",
-        "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "TIN Registration", "url": "https://aziz.com.bd/#services"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Income Tax Return Filing", "url": "https://aziz.com.bd/#services"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "VAT Registration", "url": "https://aziz.com.bd/#services"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "VAT Return Filing", "url": "https://aziz.com.bd/#services"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Income Tax Appeal", "url": "https://aziz.com.bd/#services"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tax Advisory", "url": "https://aziz.com.bd/#services"}}
-        ]
-      },
-      "sameAs": [ "https://www.facebook.com/AzizTaxServices" ],
-      "priceRange": "$$$"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "@id": "https://aziz.com.bd/#faq",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "বাংলাদেশে টিআইএন (TIN) নিবন্ধন করতে কী কী লাগে?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "টিআইএন নিবন্ধনের জন্য সাধারণত জাতীয় পরিচয়পত্র/পাসপোর্ট, মোবাইল নম্বর এবং বর্তমান ঠিকানা প্রয়োজন। আমরা ব্যক্তি ও কর্পোরেট—দুই ক্ষেত্রেই দ্রুত ও নির্ভুলভাবে টিআইএন নিবন্ধন সম্পন্ন করি।"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://aziz.com.bd/#website",
+          "name": "Aziz & Associates",
+          "url": "https://aziz.com.bd/",
+          "alternateName": ["Aziz and Associates", "Aziz & Associate", "Aziz and Associate", "আজিজ অ্যান্ড অ্যাসোসিয়েটস"]
+        },
+        {
+          "@type": "LegalService",
+          "@id": "https://aziz.com.bd/#legalservice",
+          "name": "Aziz & Associates",
+          "alternateName": ["Aziz and Associates", "Aziz & Associate", "Aziz and Associate", "আজিজ অ্যান্ড অ্যাসোসিয়েটস", "Aziz Income Tax Lawyer", "Aziz Tax Service", "Aziz Law Service", "আজিজ ট্যাক্স", "আজিজ ভ্যাট", "Aziz Vat Service", "Aziz TIN Service", "Abdul Aziz ITP"],
+          "description": "Aziz & Associates is a premier tax and VAT law firm in Bangladesh, offering expert legal services nationwide. Specializing in income tax returns, TIN/VAT registration, and tax appeals.",
+          "url": "https://aziz.com.bd/",
+          "logo": { "@type": "ImageObject", "url": "https://aziz.com.bd/logo.png", "width": 512, "height": 512 },
+          "image": "https://aziz.com.bd/logo.png",
+          "telephone": "+8801711479659",
+          "email": "contact@aziz.com.bd",
+           "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+8801711479659",
+            "contactType": "customer service",
+            "areaServed": "BD",
+            "availableLanguage": ["en", "bn"],
+            "description": "Contact us on WhatsApp for immediate assistance."
+          },
+          "founder": { "@type": "Person", "name": "Abdul Aziz", "jobTitle": "Income Tax Practitioner (ITP)", "knowsAbout": ["Tax Law", "VAT Law", "Income Tax"] },
+          "address": { "@type": "PostalAddress", "streetAddress": "In front of Alhaj Abdul Mannan Degree College, BKSP, Ashulia", "addressLocality": "Savar", "addressRegion": "Dhaka", "postalCode": "1349", "addressCountry": "BD" },
+          "openingHours": "Sa,Su,Mo,Tu,We,Th,Fr 10:00-21:00",
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "10:00",
+            "closes": "21:00"
+          }],
+          "areaServed": [
+            { "@type": "AdministrativeArea", "name": "Dhaka Division" }, { "@type": "AdministrativeArea", "name": "Chittagong Division" }, { "@type": "AdministrativeArea", "name": "Sylhet Division" },
+            { "@type": "AdministrativeArea", "name": "Rajshahi Division" }, { "@type": "AdministrativeArea", "name": "Khulna Division" }, { "@type": "AdministrativeArea", "name": "Barisal Division" },
+            { "@type": "AdministrativeArea", "name": "Rangpur Division" }, { "@type": "AdministrativeArea", "name": "Mymensingh Division" }, { "@type": "Country", "name": "Bangladesh" }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog", "name": "Tax & VAT Legal Services",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "TIN Registration", "url": "https://aziz.com.bd/#services"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Income Tax Return Filing", "url": "https://aziz.com.bd/#services"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "VAT Registration", "url": "https://aziz.com.bd/#services"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "VAT Return Filing", "url": "https://aziz.com.bd/#services"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Income Tax Appeal", "url": "https://aziz.com.bd/#services"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tax Advisory", "url": "https://aziz.com.bd/#services"}}
+            ]
+          },
+          "sameAs": [ "https://www.facebook.com/AzizTaxServices" ],
+          "priceRange": "$$$"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://aziz.com.bd/#faq",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "বাংলাদেশে টিআইএন (TIN) নিবন্ধন করতে কী কী লাগে?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "টিআইএন নিবন্ধনের জন্য সাধারণত জাতীয় পরিচয়পত্র/পাসপোর্ট, মোবাইল নম্বর এবং বর্তমান ঠিকানা প্রয়োজন। আমরা ব্যক্তি ও কর্পোরেট—দুই ক্ষেত্রেই দ্রুত ও নির্ভুলভাবে টিআইএন নিবন্ধন সম্পন্ন করি।"
+            }
+          },{
+            "@type": "Question",
+            "name": "আয়কর রিটার্ন দাখিলের জন্য কীভাবে প্রস্তুতি নেব?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "আমরা আপনার আয়-ব্যয়ের দলিলপত্র যাচাই করে, প্রযোজ্য সকল ছাড় ও রিবেট বিবেচনায় নিয়ে সঠিকভাবে রিটার্ন প্রস্তুত ও দাখিল করি, যা কমপ্লায়েন্স ও ট্যাক্স অপ্টিমাইজেশন নিশ্চিত করে।"
+            }
+          },{
+            "@type": "Question",
+            "name": "কারা ভ্যাট (VAT) নিবন্ধন করবেন এবং এর প্রক্রিয়া কী?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "বার্ষিক টার্নওভার বা ব্যবসার প্রকৃতির ওপর ভিত্তি করে অনেক প্রতিষ্ঠান ও ফ্রিল্যান্সারদের ভ্যাট নিবন্ধন বাধ্যতামূলক। আমরা প্রয়োজনীয় নথি সংগ্রহ থেকে শুরু করে অনলাইন আবেদন পর্যন্ত সম্পূর্ণ প্রক্রিয়াটি পরিচালনা করি।"
+            }
+          },{
+            "@type": "Question",
+            "name": "ট্যাক্স আপিল বা বিরোধে আপনারা কীভাবে সহায়তা করেন?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "আমরা ট্যাক্স কর্তৃপক্ষের নোটিশ পর্যালোচনা, প্রমাণ সংগ্রহ, আইনি যুক্তি প্রস্তুত এবং শুনানিতে আপনার পক্ষে প্রতিনিধিত্ব করে থাকি, যাতে আপনার জন্য সর্বোত্তম ফলাফল নিশ্চিত করা যায়।"
+            }
+          },{
+            "@type": "Question",
+            "name": "পরামর্শের জন্য কীভাবে যোগাযোগ করব?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "আপনি আমাদের ওয়েবসাইটের কন্টাক্ট ফর্ম পূরণ করতে পারেন অথবা সরাসরি +8801711479659 নম্বরে কল বা WhatsApp করতে পারেন। আমরা প্রতিদিন সকাল ১০টা থেকে রাত ৯টা পর্যন্ত আপনার সেবায় নিয়োজিত।"
+            }
+          }]
         }
-      },{
-        "@type": "Question",
-        "name": "আয়কর রিটার্ন দাখিলের জন্য কীভাবে প্রস্তুতি নেব?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "আমরা আপনার আয়-ব্যয়ের দলিলপত্র যাচাই করে, প্রযোজ্য সকল ছাড় ও রিবেট বিবেচনায় নিয়ে সঠিকভাবে রিটার্ন প্রস্তুত ও দাখিল করি, যা কমপ্লায়েন্স ও ট্যাক্স অপ্টিমাইজেশন নিশ্চিত করে।"
-        }
-      },{
-        "@type": "Question",
-        "name": "কারা ভ্যাট (VAT) নিবন্ধন করবেন এবং এর প্রক্রিয়া কী?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "বার্ষিক টার্নওভার বা ব্যবসার প্রকৃতির ওপর ভিত্তি করে অনেক প্রতিষ্ঠান ও ফ্রিল্যান্সারদের ভ্যাট নিবন্ধন বাধ্যতামূলক। আমরা প্রয়োজনীয় নথি সংগ্রহ থেকে শুরু করে অনলাইন আবেদন পর্যন্ত সম্পূর্ণ প্রক্রিয়াটি পরিচালনা করি।"
-        }
-      },{
-        "@type": "Question",
-        "name": "ট্যাক্স আপিল বা বিরোধে আপনারা কীভাবে সহায়তা করেন?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "আমরা ট্যাক্স কর্তৃপক্ষের নোটিশ পর্যালোচনা, প্রমাণ সংগ্রহ, আইনি যুক্তি প্রস্তুত এবং শুনানিতে আপনার পক্ষে প্রতিনিধিত্ব করে থাকি, যাতে আপনার জন্য সর্বোত্তম ফলাফল নিশ্চিত করা যায়।"
-        }
-      },{
-        "@type": "Question",
-        "name": "পরামর্শের জন্য কীভাবে যোগাযোগ করব?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "আপনি আমাদের ওয়েবসাইটের কন্টাক্ট ফর্ম পূরণ করতে পারেন অথবা সরাসরি +8801711479659 নম্বরে কল বা WhatsApp করতে পারেন। আমরা প্রতিদিন সকাল ১০টা থেকে রাত ৯টা পর্যন্ত আপনার সেবায় নিয়োজিত।"
-        }
-      }]
+      ]
     }
     </script>
 
