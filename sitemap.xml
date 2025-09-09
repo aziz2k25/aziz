@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- Bengali Homepage -->
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aziz.com.bd/</loc>
-    <lastmod>2025-09-05</lastmod>
+    <lastmod>2025-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link 
@@ -21,11 +19,9 @@
                hreflang="x-default"
                href="https://aziz.com.bd/"/>
   </url>
-
-  <!-- English Homepage -->
   <url>
     <loc>https://aziz.com.bd/en/</loc>
-    <lastmod>2025-09-05</lastmod>
+    <lastmod>2025-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link 
@@ -41,5 +37,5 @@
                hreflang="x-default"
                href="https://aziz.com.bd/"/>
   </url>
-
 </urlset>
+
